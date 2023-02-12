@@ -6,6 +6,13 @@ public class Lec08Main {
 
   }
 
+  public int max(int a, int b) {
+    if (a > b) {
+      return a;
+    }
+    return b;
+  }
+
   public static void printAll(String... strings) {
     for (String str : strings) {
       System.out.println(str);
