@@ -12,7 +12,7 @@ fun main() {
 }
 
 class Person(
-    val name: String
+    name: String
     ,var age: Int
 ) {
     init {
@@ -32,6 +32,9 @@ class Person(
         get() {
             return this.age >= 20
         }
+
+    val upperCaseName: String
+        get() = this.name.upperCase()
 
     constructor(name: String): this(name, 1)
 }
